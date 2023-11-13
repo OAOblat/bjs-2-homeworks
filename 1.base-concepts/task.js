@@ -17,6 +17,8 @@ function solveEquation(a, b, c) {
   }
 }
 
+// Задача 2. Калькулятор для расчёта выплат по ипотеке
+
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   let percentMonthly = (percent / 100) / 12;
   let principleAmount = amount - contribution;
@@ -25,3 +27,4 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   return totalAmount;
 }
 
+console.log(calculateTotalMortgage(15, 0, 10000, 36))
