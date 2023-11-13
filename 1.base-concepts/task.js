@@ -26,5 +26,3 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   let totalAmount = parseFloat((paymentMonthly * countMonths).toFixed(2));
   return totalAmount;
 }
-
-console.log(calculateTotalMortgage(15, 0, 10000, 36))
