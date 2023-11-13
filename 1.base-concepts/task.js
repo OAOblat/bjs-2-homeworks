@@ -1,6 +1,7 @@
 // Задача 1. Программа для решения квадратных уравнений (ax² + bx + c = 0)
 
 "use strict"
+
 function solveEquation(a, b, c) {
   let arr = [];
   let d = b**2 - 4*a*c;
