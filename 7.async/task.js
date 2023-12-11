@@ -26,10 +26,10 @@ class AlarmClock {
 	}
 
 	getCurrentFormattedTime() {
-		const currentDate = new Date();
-		const hours = ('0' + currentDate.getHours()).slice(-2);
-		const minutes = ('0' + currentDate.getMinutes()).slice(-2);
-		const currentTime = hours + ':' + minutes;
+		const currentTime = new Date().toLocaleTimeString("ru-Ru", {
+            hour: "2-digit",
+            minute: "2-digit",
+          })
 
 		return currentTime;
 	}
