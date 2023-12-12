@@ -37,7 +37,7 @@ function debounceDecoratorNew(func, delay) {
             count++;
             
         }, delay);
-    
+        
     wrapper.count = count;
     wrapper.allCount = allCount;
     }
@@ -51,11 +51,6 @@ function debounceDecoratorNew(func, delay) {
 
     return wrapper;
 }
-
-    
-
-
-
 
 const sendSignal = (signalOrder, delay) => console.log("Сигнал отправлен", signalOrder, delay);
 const upgradedSendSignal = debounceDecoratorNew(sendSignal, 2000);
